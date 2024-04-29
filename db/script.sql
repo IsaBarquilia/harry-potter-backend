@@ -15,14 +15,14 @@ CREATE TABLE bruxo (
 INSERT INTO bruxo (nome, idade, casa, habilidade, sangue, patrono, varinha)
 VALUES ('Harry Potter', 18, 'Grifinória', 'Bruxaria', 'Mestiço', 'Corça', 'Azevinho e pena de fênix, 11 polegadas, maleável');
 
-
-CREATE TABLE varinhas (
+CREATE TABLE varinha (
     id SERIAL PRIMARY KEY,
-    material VARCHAR(255) NOT NULL,
+    madeira VARCHAR(255) NOT NULL,
     nucleo VARCHAR(255) NOT NULL,
-    comprimento VARCHAR(255) NOT NULL,
+    tamanho VARCHAR(255) NOT NULL,
     fabricacao INTEGER NOT NULL
 );
 
-INSERT INTO varinhas (material, nucleo, comprimento, fabricacao)
+INSERT INTO varinha (madeira, nucleo, tamanho, fabricacao)
 VALUES ('Carvalho', 'Pena de Fênix', '10 polegadas', 1990);
+
